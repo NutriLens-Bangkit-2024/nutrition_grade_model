@@ -1,11 +1,11 @@
-import pickle
+from tensorflow.keras.models import load_model
 import numpy as np
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent
 
-with open(f"{BASE_DIR}/trained.pkl", "rb") as f:
-    model = pickle.load(f)
+with open(f"{BASE_DIR}/model.h5", "rb") as f:
+    model = load_model(f)
 
 # classes = [
 #     "A",

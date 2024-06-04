@@ -2,7 +2,7 @@
 
 ## Follow this steps to run this models
 1. Setup The Env  
-`python==3.10`
+`windows -> venv\Scripts\activate`
 2. Install the required dependencies `pip install -r requirements.txt`
 3. To Run the docker, make sure you have installed Docker Desktop
 4. Once Docker Desktop is installed, run this command `docker build -t nutriscore-app .`
