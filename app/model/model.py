@@ -1,11 +1,11 @@
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 import numpy as np
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent
 
-with open(f"{BASE_DIR}/model.h5", "rb") as f:
-    model = load_model(f)
+model = tf.keras.models.load_model(os.path.join(BASE_DIR, 'nutrigrade_model(1).h5'),compile=False)
 
 # classes = [
 #     "A",
